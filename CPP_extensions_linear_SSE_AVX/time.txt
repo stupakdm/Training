@@ -1,0 +1,103 @@
+Время выполнения:
+1. 3 слоя
+	1) 1 слой - (512, 256), 2 слой - (256, 64), 3 слой - (64,10)
+	Время выполнения:
+	С++ без SSE и AVX:
+	Forward: 3.070 | Backward 1.318
+	SSE:
+	Forward: 0.708 | Backward 0.621
+	AVX:
+	Forward: 0.689 | Backward 0.718
+	Pytorch реализация:
+	Forward: 0.384 | Backward 0.392
+	
+	2) 1 слой - (1024, 256), 2 слой - (256, 16), 3 слой - (16,10)
+	Время выполнения:
+	С++ без SSE и AVX:
+	Forward: 4.422 | Backward 0.738
+	SSE:
+	Forward: 1.269 | Backward 0.607
+	AVX:
+	Forward: 1.193 | Backward 0.578
+	Pytorch реализация:
+	Forward: 0.625 | Backward 1.195
+	
+	3) 1 слой - (1024, 512), 2 слой - (512, 64), 3 слой - (64,10)
+	Время выполнения:
+	С++ без SSE и AVX:
+	Forward: 8.980 | Backward 3.108
+	SSE:
+	Forward: 2.886 | Backward 1.157
+	AVX:
+	Forward: 2.516 | Backward 0.901
+	Pytorch реализация:
+	Forward: 1.016 | Backward 1.171
+	
+2. 4 слоя
+	1) 1 слой - (512, 256), 2 слой - (256, 64), 3 слой - (64, 16), 4 слой - (16,10)
+	Время выполнения:
+	С++ без SSE и AVX:
+	Forward: 2.624 | Backward 1.054
+	SSE:
+	Forward: 0.790 | Backward 1.080
+	AVX:
+	Forward: 0.650 | Backward 0.574
+	Pytorch реализация:
+	Forward: 0.455 | Backward 0.511
+	
+	2) 1 слой - (512, 256), 2 слой - (256, 128), 3 слой - (128, 64), 4 слой - (64,10)
+	Время выполнения:
+	С++ без SSE и AVX:
+	Forward: 2.901 | Backward 1.081
+	SSE:
+	Forward: 1.021 | Backward 0.535
+	AVX:
+	Forward: 0.926 | Backward 0.879
+	Pytorch реализация:
+	Forward: 0.499 | Backward 0.726
+	
+	3) 1 слой - (1024, 512), 2 слой - (512, 256), 3 слой - (256, 64), 4 слой - (64,10)
+	Время выполнения:
+	С++ без SSE и AVX:
+	Forward: 11.101 | Backward 2.283
+	SSE:
+	Forward: 3.355 | Backward 1.664
+	AVX:
+	Forward: 3.233 | Backward 0.987
+	Pytorch реализация:
+	Forward: 0.796 | Backward 0.735
+	
+3. 5 слоев
+	1) 1 слой - (512, 256), 2 слой - (256, 128), 3 слой - (128, 64), 4 слой - (64,16), 5 слой - (16,10)
+	Время выполнения:
+	С++ без SSE и AVX:
+	Forward: 2.910 | Backward 0.570
+	SSE:
+	Forward: 0.747 | Backward 1.029
+	AVX:
+	Forward: 0.971 | Backward 0.704
+	Pytorch реализация:
+	Forward: 0.469 | Backward 0.636
+	
+	2) 1 слой - (1024, 256), 2 слой - (256, 128), 3 слой - (128, 64), 4 слой - (64,32), 5 слой - (32,10)
+	Время выполнения:
+	С++ без SSE и AVX:
+	Forward: 5.285 | Backward 0.908
+	SSE:
+	Forward: 1.927 | Backward 1.699
+	AVX:
+	Forward: 1.578 | Backward 1.264
+	Pytorch реализация:
+	Forward: 0.618 | Backward 0.627
+	
+	3) 1 слой - (1024, 512), 2 слой - (512, 256), 3 слой - (256, 128), 4 слой - (128,64), 5 слой - (64,10)
+	Время выполнения:
+	С++ без SSE и AVX:
+	Forward: 11.467 | Backward 2.847
+	SSE:
+	Forward: 3.552 | Backward 1.657
+	AVX:
+	Forward: 3.484 | Backward 1.421
+	Pytorch реализация:
+	Forward: 0.790 | Backward 0.889
+	
