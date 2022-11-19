@@ -19,6 +19,8 @@
  Было произведено несколько тестов производительности работы, написанных функций и Linear, встроенным в pytorch. 
  Более подробные результаты в time.txt.
  
+ По оси X - тест из time.txt, ось Y - время, затраченное на выполнение.
+ 
   - График работы для 3 слоев:
   
  ![alt text](https://github.com/stupakdm/Training/blob/main/CPP_extensions_linear_SSE_AVX/3_layers.png)
