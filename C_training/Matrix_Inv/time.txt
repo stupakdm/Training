@@ -1,0 +1,66 @@
+Times:
+1. N=256
+Clean:
+real	0m0,039s
+user	0m0,032s
+sys	0m0,000s
+
+SSE:
+real	0m0,039s
+user	0m0,033s
+sys	0m0,004s
+
+AVX:
+real	0m0,025s
+user	0m0,025s
+sys	0m0,000s
+
+2. N=512
+Clean:
+real	0m0,364s
+user	0m0,354s
+sys	0m0,004s
+
+SSE:
+real	0m0,328s
+user	0m0,317s
+sys	0m0,008s
+
+AVX:
+real	0m0,189s
+user	0m0,179s
+sys	0m0,008s
+
+3. N=1024
+Clean:
+real	0m2,991s
+user	0m2,920s
+sys	0m0,020s
+
+SSE:
+real	0m2,966s
+user	0m2,810s
+sys	0m0,036s
+
+AVX:
+real	0m1,500s
+user	0m1,444s
+sys	0m0,016s
+
+4.N=2048
+Clean:
+real	1m31,741s
+user	1m16,785s
+sys	0m0,239s
+
+SSE:
+real	0m44,406s
+user	0m30,982s
+sys	0m0,191s
+
+AVX:
+real	0m36,500s
+user	0m23,424s
+sys	0m0,135s
+
+
